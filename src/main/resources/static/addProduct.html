@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nuevo Producto</title>
+
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Agregar Producto</h2>
+
+    <form id="productForm">
+
+        <input
+            type="text"
+            id="nombre"
+            placeholder="Nombre"
+            required>
+
+        <input
+            type="text"
+            id="descripcion"
+            placeholder="Descripción"
+            required>
+
+        <input
+            type="number"
+            id="precio"
+            placeholder="Precio"
+            required>
+
+        <input
+            type="number"
+            id="stock"
+            placeholder="Stock"
+            required>
+
+        <select id="categoria">
+
+        <option value="1">Accesorios</option>
+        <option value="2">Pantalones</option>
+        <option value="3">Abrigos</option>
+        <option value="4">Gorros</option>
+        <option value="5">Ropa de Mujer</option>
+        <option value="6">Ropa de Hombre</option>
+        <option value="7">Zapatillas</option>
+
+        </select>
+
+        <button type="submit">
+            Crear Producto
+        </button>
+
+        <p id="mensaje"></p>
+
+    </form>
+    </div>
+
+    <script src="addProduct.js"></script>
+
+</body>
+
+</html>

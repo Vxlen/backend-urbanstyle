@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Style</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Urban Style</h1>
+    </div>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    
+    <a href="form.html"><button class="register" id="btnRegister">Registrarse</button></a>
+    <a href="login.html"><button class="register" id="btnLogin">Iniciar Sesión</button></a>
+    <h3 id="saludo"></h3>
+    <button onclick="logout()" class="register" style="display:none" id="btnLogout">Cerrar sesión</button>
+    <button class="carrito" id="carrito">
+        🛒 Carrito
+    </button>
+    <button class="register" id="btnNuevoProducto" onclick="window.location.href='addProduct.html'">Nuevo Producto</button>
+</header>
+
+<section class="hero">
+    <h2>Nueva Colección 2026</h2>
+    <p>Moda urbana para todos los estilos</p>
+</section>
+
+    <div class="filtros">
+
+        <button onclick="seleccionarCategoria(0)">Todas</button>
+        <button onclick="seleccionarCategoria(1)">Accesorios</button>
+        <button onclick="seleccionarCategoria(2)">Pantalones</button>
+        <button onclick="seleccionarCategoria(3)">Abrigos</button>
+        <button onclick="seleccionarCategoria(4)">Gorros</button>
+        <button onclick="seleccionarCategoria(5)">Ropa de Mujer</button>
+        <button onclick="seleccionarCategoria(6)">Ropa de Hombre</button>
+        <button onclick="seleccionarCategoria(7)">Zapatillas</button>
+    
+
+    </div>
+
+
+<section id="productos" class="productos">
+
+
+</section>
+
+<footer>
+    <p>© 2026 Urban Style</p>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
