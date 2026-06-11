@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/graphql";
+const API_URL = "/graphql";
 
 document
     .getElementById("loginForm")
