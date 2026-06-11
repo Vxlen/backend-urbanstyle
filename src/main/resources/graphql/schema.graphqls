@@ -1,0 +1,57 @@
+
+# Query - Consultas
+type Query{
+    findProductByID(productID: String): Product,
+    findAllProducts: [Product],
+
+    findAllCategories: [Categoria],
+    findCategoryByID(categoryID: String): Categoria
+
+    findUserByID(userID: String): Usuarios,
+    findAllUsers: [Usuarios]}
+
+# Mutation - Modificaciones
+type Mutation{
+    createProduct(productInput: ProductInput): Product,
+    modificarProducto(productID: String, productInput: ProductInput): String,
+    deleteProductByID(productID: String): String,
+
+    createCategory(categoryInput: CategoryInput): Categoria
+
+    createUser(userInput: UsuarioInput): Usuarios,
+    login(userInput: UsuarioInput): Boolean,
+    deleteUser(userID: String): String}
+
+
+# Objetos
+type Product{
+    id: ID,
+    nombre: String,
+    descripcion: String,
+    precio: Float,
+    stock: Int,
+    categoria: Categoria}
+
+type Categoria{
+    id: ID,
+    nombre: String}
+
+input ProductInput{
+    nombre: String,
+    descripcion: String,
+    precio: Float,
+    stock: Int,
+    categoriaID: String}
+
+input CategoryInput{
+    nombre: String}
+
+type Usuarios{
+    id: ID,
+    username: String,
+    password: String,
+    rol: String}
+
+input UsuarioInput{
+    username: String,
+    password: String}
